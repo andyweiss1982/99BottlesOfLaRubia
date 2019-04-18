@@ -1,0 +1,62 @@
+body{
+  margin: 0;
+  background-image: url(wall.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  height: 100px;
+  background-color: #FAED02;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  text-transform: uppercase;
+}
+
+h1{
+  margin: 0;
+}
+
+.count{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3rem;
+  line-height: 33%;
+  color: #F05B27;
+  text-shadow: 2px 2px black;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+  margin-top: 100px;
+}
+
+.bottle{
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bottle.drank{
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .count {
+    font-size: 2rem;
+  }
+}
