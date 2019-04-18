@@ -16,7 +16,7 @@ header{
   display: grid;
   place-items: center;
   height: 100px;
-  background-color: #FAED02;
+  background-color: rgba(250, 237, 2, 0.9);
   font-family: 'Playfair Display', serif;
   color: black;
   text-transform: uppercase;
