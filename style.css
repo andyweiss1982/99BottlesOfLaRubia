@@ -20,6 +20,7 @@ header{
   font-family: 'Playfair Display', serif;
   color: black;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 h1{
@@ -45,6 +46,11 @@ main{
   width: 100%;
   cursor: pointer;
   transition: all 0.3s;
+  z-index: 1;
+}
+
+.bottle:hover{
+  transform: scale(1.1);
 }
 
 .bottle.drank{
