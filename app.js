@@ -4,11 +4,14 @@ const bottleWords = document.querySelectorAll('.bottle-word')
 
 function drink(){
   if(confirm('Take one down, pass it around?')){
-    this.classList.add('drank')
-    const remainingBottles = document.querySelectorAll('.bottle:not(.drank)').length
-    counters.forEach(counter => counter.textContent = remainingBottles)
-    const word = remainingBottles === 1 ? 'bottle' : 'bottles'
-    bottleWords.forEach(bottleWord => bottleWord.textContent = word)
+    this.classList.add('drinking')
+    setTimeout(() => {
+      this.classList.add('drank')
+      const remainingBottles = document.querySelectorAll('.bottle:not(.drank)').length
+      counters.forEach(counter => counter.textContent = remainingBottles)
+      const word = remainingBottles === 1 ? 'bottle' : 'bottles'
+      bottleWords.forEach(bottleWord => bottleWord.textContent = word)
+    }, 300)
   }
 }
 

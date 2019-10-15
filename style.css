@@ -52,6 +52,10 @@ main{
   transform: scale(1.1);
 }
 
+.bottle.drinking{
+  transform: rotate(180deg);
+}
+
 .bottle.drank{
   visibility: hidden;
   opacity: 0;
